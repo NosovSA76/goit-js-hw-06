@@ -5,8 +5,10 @@ const output = document.querySelector("#name-output");
  output.textContent = "Amonimus"
 
 nameInput.addEventListener("input", (event) => {
-    output.textContent = event.currentTarget.value;
-    if (output.textContent) { }
-    else {output.textContent = "Amonimus"}
-}); 
-
+   const inputText = event.currentTarget.value.trim();
+    if (inputText) {
+        output.textContent = inputText;
+    } else {
+        output.textContent = "Amonimus";
+    }
+});

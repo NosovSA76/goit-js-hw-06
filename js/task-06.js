@@ -8,7 +8,8 @@ nameInput.addEventListener("blur", (event) => {
     console.log(inputLength);
 
     if (inputLength - 6) {
-     nameInput.setAttribute('borderColor', "#f44336" )
-  }else{nameInput.setAttribute('borderColor', "#4caf50")}
+     nameInput.setAttribute('class', "invalid")
+  } else { nameInput.setAttribute('class', "valid") }
+
 });
 

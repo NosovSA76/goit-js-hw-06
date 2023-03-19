@@ -18,6 +18,7 @@ gallery.style.display = "flex";
 gallery.style.justifyContent = "space-around";
 
 
+
 const imagesMarkup = images.reduce(
   (markup, { url, alt }) =>
     markup + `<li><img src="${url}" alt="${alt}"></li>`,
